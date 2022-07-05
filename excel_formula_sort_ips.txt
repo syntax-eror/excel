@@ -1,0 +1,1 @@
+=TEXT(LEFT(A2,FIND(".",A2,1)-1),"000") & "." & TEXT(MID(A2,FIND( ".",A2,1)+1,FIND(".",A2,FIND(".",A2,1)+1)-FIND(".",A2,1)-1),"000") & "." & TEXT(MID(A2,FIND(".",A2,FIND(".",A2,1)+1)+1,FIND(".",A2, FIND(".",A2,FIND(".",A2,1)+1)+1)-FIND(".",A2,FIND(".",A2,1)+1)-1), "000") & "." & TEXT(RIGHT(A2,LEN(A2)-FIND(".",A2,FIND(".",A2,FIND( ".",A2,1)+1)+1)),"000")
